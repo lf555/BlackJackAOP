@@ -611,23 +611,32 @@ namespace BlackJackAOP
                 }
 
                 var constraints = argument.GenericParameterAttributes & GenericParameterAttributes.SpecialConstraintMask;
-                if ((constraints & GenericParameterAttributes.ReferenceTypeConstraint) != 0)
+                if ((int)constraints == 24)
                 {
-                    builder.Append(empty ? $"where {argument.Name}: class" : ", class");
+                    builder.Append(empty?$"where {argument.Name}:struct" :",struct");
                     empty = false;
                 }
+                else
+                {
+                    if ((constraints & GenericParameterAttributes.ReferenceTypeConstraint) != 0)
+                    {
+                        builder.Append(empty ? $"where {argument.Name}: class" : ", class");
+                        empty = false;
+                    }
 
-                if ((constraints & GenericParameterAttributes.NotNullableValueTypeConstraint) != 0)
-                {
-                    builder.Append(empty ? $"where {argument.Name}: notnull" : ", notnull");
-                    empty = false;
-                }
+                    if ((constraints & GenericParameterAttributes.NotNullableValueTypeConstraint) != 0)
+                    {
+                        builder.Append(empty ? $"where {argument.Name}: notnull" : ", notnull");
+                        empty = false;
+                    }
 
-                if ((constraints & GenericParameterAttributes.DefaultConstructorConstraint) != 0)
-                {
-                    builder.Append(empty ? $"where {argument.Name}: new()" : ", new()");
-                    empty = false;
+                    if ((constraints & GenericParameterAttributes.DefaultConstructorConstraint) != 0)
+                    {
+                        builder.Append(empty ? $"where {argument.Name}: new()" : ", new()");
+                        empty = false;
+                    }
                 }
+                
 
                 if (!empty)
                 {

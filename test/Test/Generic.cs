@@ -38,6 +38,29 @@ namespace Test
         {
             registry.For<C1Intercetptor>().ToMethod<C2<int>>(1, it => it.M1(default));
         }
+
+        [Fact]
+        public void T3()
+        {
+            var service = new ServiceCollection()
+                .AddSingleton(typeof(IC3<>),typeof(C3<>))
+                .AddSingleton(typeof(C3<>))
+                .BuildInterceptableServiceProvider()
+                .GetRequiredService<C3<int>>();
+
+            Assert.True(true);
+        }
+
+        [Fact]
+        public void T4()
+        {
+            var service = new ServiceCollection()
+                .AddSingleton(typeof(C4<>))
+                .BuildInterceptableServiceProvider()
+                .GetRequiredService<C4<ServiceCollection>>();
+
+            Assert.True(true);
+        }
     }
 
     public interface IC1<T>
@@ -53,9 +76,29 @@ namespace Test
     }
 
     public class C2<T>
-        where T : notnull
+        where T : notnull,new()
     {
         public virtual T M1(T t) => t;
+    }
+
+    public interface IC3<T>
+        where T:struct
+    {
+        void M();
+    }
+
+    public class C3<T> : IC3<T>
+        where T : struct
+    {
+        [Interceptor(typeof(C3Intercetptor))]
+        public virtual void M() { }
+    }
+
+    public class C4<T>
+        where T : class, new()
+    {
+        [Interceptor(typeof(C3Intercetptor))]
+        public virtual void M() { }
     }
 
     class C1Intercetptor
@@ -70,6 +113,13 @@ namespace Test
             var returnValue = getReturnValue.Invoke(context,null);
 
             Assert.NotNull(returnValue);
+        }
+    }
+    class C3Intercetptor
+    {
+        public async ValueTask InvokeAsync(InvocationContext context)
+        {
+            await context.ProceedAsync();
         }
     }
 }

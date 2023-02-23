@@ -38,6 +38,12 @@ namespace BlackJackAOP
                 return false;
             }
             suppressed = false;
+            var a = _interceptorsAccessors4Type.ContainsKey(targetType) || _interceptorsAccessors4Method.ContainsKey(new Tuple<int, MethodInfo>(method.MetadataToken, method));
+            if (a == false)
+            {
+
+            }
+                
             return _interceptorsAccessors4Type.ContainsKey(targetType) || _interceptorsAccessors4Method.ContainsKey(new Tuple<int,MethodInfo>(method.MetadataToken,method));
         }
         public IInterceptorRegistry<TInterceptor> For<TInterceptor>(params object[] arguments)
