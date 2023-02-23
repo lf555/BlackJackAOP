@@ -1,0 +1,5 @@
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\BlackAOP.csproj.AssemblyReference.cache
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\BlackAOP.GeneratedMSBuildEditorConfig.editorconfig
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\BlackAOP.AssemblyInfoInputs.cache
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\BlackAOP.AssemblyInfo.cs
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\BlackAOP.csproj.CoreCompileInputs.cache

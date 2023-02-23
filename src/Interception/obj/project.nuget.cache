@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2SUuMueZTeeBVVHj4wfYyAqVxvikFrwRCII4ypuErHydyFJCH2vO9kF88Z+WqwhXRWTeqaAc5HEP1jZ8bXqAaQ==",
+  "success": true,
+  "projectFilePath": "D:\\好东西\\BlackJack\\src\\Interception\\BlackJackAOP.csproj",
+  "expectedPackageFiles": [
+    "D:\\nugetpackages\\NugetPackges\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

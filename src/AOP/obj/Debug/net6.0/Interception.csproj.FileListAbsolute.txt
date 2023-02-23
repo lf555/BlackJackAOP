@@ -1,0 +1,12 @@
+D:\好东西\BlackJack\src\Interception\bin\Debug\net6.0\Interception.deps.json
+D:\好东西\BlackJack\src\Interception\bin\Debug\net6.0\Interception.dll
+D:\好东西\BlackJack\src\Interception\bin\Debug\net6.0\Interception.pdb
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\Interception.csproj.AssemblyReference.cache
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\Interception.GeneratedMSBuildEditorConfig.editorconfig
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\Interception.AssemblyInfoInputs.cache
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\Interception.AssemblyInfo.cs
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\Interception.csproj.CoreCompileInputs.cache
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\Interception.dll
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\refint\Interception.dll
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\Interception.pdb
+D:\好东西\BlackJack\src\Interception\obj\Debug\net6.0\ref\Interception.dll

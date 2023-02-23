@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "8q1Ro9z5vJhpvVB/TKQJWxo01wNDfNdgoQHmTTwbU3OOG4bTQwR2KB/K6y2ZJ0HobC6DIrRtZlxt3egAu4WWbw==",
+  "success": true,
+  "projectFilePath": "D:\\好东西\\git\\BlackJackAOP\\src\\AOP\\BlackJackAOP.csproj",
+  "expectedPackageFiles": [
+    "D:\\nugetpackages\\NugetPackges\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\microsoft.codeanalysis.common\\4.4.0\\microsoft.codeanalysis.common.4.4.0.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\microsoft.codeanalysis.csharp\\4.4.0\\microsoft.codeanalysis.csharp.4.4.0.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\system.reflection.metadata\\5.0.0\\system.reflection.metadata.5.0.0.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
+    "D:\\nugetpackages\\NugetPackges\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
