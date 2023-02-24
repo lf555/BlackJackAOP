@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{56E9D85E-524
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6FC3EDC4-E0A0-47F9-A55D-D93E58605B9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackJackAOP.AspNetCore", "..\AspNetCore\BlackJack.AspNetCore\BlackJackAOP.AspNetCore.csproj", "{6DA5C305-43E2-4B99-8EE3-54F90AF3371B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{1CC6EEA7-2072-4698-B1E7-B31EB948C52E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CC6EEA7-2072-4698-B1E7-B31EB948C52E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CC6EEA7-2072-4698-B1E7-B31EB948C52E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DA5C305-43E2-4B99-8EE3-54F90AF3371B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA5C305-43E2-4B99-8EE3-54F90AF3371B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA5C305-43E2-4B99-8EE3-54F90AF3371B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA5C305-43E2-4B99-8EE3-54F90AF3371B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4D932370-005A-458C-A1CA-C0F23E397851} = {56E9D85E-524A-479F-BDFF-39CAC144690A}
 		{1CC6EEA7-2072-4698-B1E7-B31EB948C52E} = {6FC3EDC4-E0A0-47F9-A55D-D93E58605B9F}
+		{6DA5C305-43E2-4B99-8EE3-54F90AF3371B} = {56E9D85E-524A-479F-BDFF-39CAC144690A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8AF9E245-43A7-42A0-8141-5761B3A2F6B7}

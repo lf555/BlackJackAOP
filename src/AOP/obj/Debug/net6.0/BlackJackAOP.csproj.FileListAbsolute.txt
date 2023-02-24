@@ -22,3 +22,15 @@ D:\好东西\BlackJack\src\AOP\obj\Debug\net6.0\BlackJackAOP.dll
 D:\好东西\BlackJack\src\AOP\obj\Debug\net6.0\refint\BlackJackAOP.dll
 D:\好东西\BlackJack\src\AOP\obj\Debug\net6.0\BlackJackAOP.pdb
 D:\好东西\BlackJack\src\AOP\obj\Debug\net6.0\ref\BlackJackAOP.dll
+D:\好东西\git\BlackJackAOP\src\AOP\bin\Debug\net6.0\BlackJackAOP.deps.json
+D:\好东西\git\BlackJackAOP\src\AOP\bin\Debug\net6.0\BlackJackAOP.dll
+D:\好东西\git\BlackJackAOP\src\AOP\bin\Debug\net6.0\BlackJackAOP.pdb
+D:\好东西\git\BlackJackAOP\src\AOP\obj\Debug\net6.0\BlackJackAOP.csproj.AssemblyReference.cache
+D:\好东西\git\BlackJackAOP\src\AOP\obj\Debug\net6.0\BlackJackAOP.GeneratedMSBuildEditorConfig.editorconfig
+D:\好东西\git\BlackJackAOP\src\AOP\obj\Debug\net6.0\BlackJackAOP.AssemblyInfoInputs.cache
+D:\好东西\git\BlackJackAOP\src\AOP\obj\Debug\net6.0\BlackJackAOP.AssemblyInfo.cs
+D:\好东西\git\BlackJackAOP\src\AOP\obj\Debug\net6.0\BlackJackAOP.csproj.CoreCompileInputs.cache
+D:\好东西\git\BlackJackAOP\src\AOP\obj\Debug\net6.0\BlackJackAOP.dll
+D:\好东西\git\BlackJackAOP\src\AOP\obj\Debug\net6.0\refint\BlackJackAOP.dll
+D:\好东西\git\BlackJackAOP\src\AOP\obj\Debug\net6.0\BlackJackAOP.pdb
+D:\好东西\git\BlackJackAOP\src\AOP\obj\Debug\net6.0\ref\BlackJackAOP.dll

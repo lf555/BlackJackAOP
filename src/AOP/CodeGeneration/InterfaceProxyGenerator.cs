@@ -47,15 +47,15 @@ namespace BlackJackAOP
             {
                 return false;
             }
-
-            foreach (var method in methods)
-            {
-                codeGenerationContext.References.Add(method.ReturnType.Assembly);
-                foreach (var parameter in method.GetParameters())
-                {
-                    codeGenerationContext.References.Add(parameter.ParameterType.Assembly);
-                }
-            }
+            AddReferences(implementationType,codeGenerationContext);
+            //foreach (var method in methods)
+            //{
+            //    codeGenerationContext.References.Add(method.ReturnType.Assembly);
+            //    foreach (var parameter in method.GetParameters())
+            //    {
+            //        codeGenerationContext.References.Add(parameter.ParameterType.Assembly);
+            //    }
+            //}
 
             MethodInfo[] interfaceMethods;
             MethodInfo[] targetMethods;

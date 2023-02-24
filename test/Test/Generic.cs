@@ -61,6 +61,19 @@ namespace Test
 
             Assert.True(true);
         }
+
+        [Fact]
+        public void T5()
+        {
+            var service = new ServiceCollection()
+                .AddSingleton(typeof(IC5<>),typeof(C5<>))
+                .AddSingleton(typeof(C5<>))
+                .BuildInterceptableServiceProvider()
+                .GetRequiredService<IC5<ServiceCollection>>();
+
+            service.M();
+            Assert.True(true);
+        }
     }
 
     public interface IC1<T>
@@ -96,6 +109,18 @@ namespace Test
 
     public class C4<T>
         where T : class, new()
+    {
+        [Interceptor(typeof(C3Intercetptor))]
+        public virtual void M() { }
+    }
+
+    public interface IC5<out T>
+        where T : class, new()
+    {
+        void M();
+    }
+    public class C5<T>:IC5<T>
+         where T : class, new()
     {
         [Interceptor(typeof(C3Intercetptor))]
         public virtual void M() { }

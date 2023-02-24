@@ -20,7 +20,7 @@ namespace Test
                 .BuildInterceptableServiceProvider(interception => interception.RegisterInterceptors(RegisterInterceptors))
                 .GetRequiredService<DI>();
 
-            service.M1(2);
+            service.M1(2,1);
             service.M2();
             Assert.NotNull(service.P1);
             Assert.NotNull(service.P2);
@@ -46,9 +46,14 @@ namespace Test
         public virtual Model? P2 { get; set; }
         public virtual Model? p3 { get; set; }
         public virtual Model? p4 { get; set; }
+
         [DI]
-        public virtual void M1(int i,Model? model = null)
+        public virtual void M1(int i,int ddd=0,List<decimal>? c=null,string? a=null,int[]? b=null,Model? model = null)
         {
+            Assert.Null(a);
+            Assert.Null(b);
+            Assert.True(ddd==1);
+            //Assert.Null(c);
             Assert.NotNull(model);
         }
 

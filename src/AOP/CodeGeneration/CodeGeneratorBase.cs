@@ -591,6 +591,12 @@ namespace BlackJackAOP
 
             return (propertyName = null) != null;
         }
+
+        internal static void AddReferences(Type type,CodeGenerationContext contexxt)
+        {
+            var assemblys = type.Assembly.GetReferencedAssemblies();
+            Array.ForEach(assemblys, it => contexxt.References.Add(Assembly.Load(it)));
+        }
         #endregion
 
         #region Private methods

@@ -200,7 +200,7 @@ namespace BlackJackAOP
             {
                 return false;
             }
-
+            AddReferences(implementationType,codeGenerationContext);
             foreach (var method in interceptableMethods)
             {                
                 codeGenerationContext.References.Add(method.ReturnType.Assembly);

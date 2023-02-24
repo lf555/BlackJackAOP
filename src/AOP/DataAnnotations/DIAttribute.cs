@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace BlackJackAOP
     public class DIAttribute:InterceptorAttribute
     {
         public DIAttribute() => Order = int.MinValue;
-        public async ValueTask InvokeAsync(InvocationContext context)
+        public virtual async ValueTask InvokeAsync(InvocationContext context)
         {
             if (context.MethodInfo.IsSpecialName && context.MethodInfo.Name.StartsWith("get_"))
             {
@@ -28,7 +29,24 @@ namespace BlackJackAOP
             else
             {
                 arguments = context.MethodInfo.GetParameters()
-                .Where(it => it.IsOptional)
+                .Where(it => {
+                    bool notIgnore = true;
+                    if (typeof(IEnumerable).IsAssignableFrom(it.ParameterType))
+                    {
+                        if (it.ParameterType.IsGenericType)
+                        {
+                            var genericType = it.ParameterType.GetGenericArguments()[0];
+                            notIgnore = NotIgnore(genericType);
+                        }
+                        else if (it.ParameterType.IsArray || it.ParameterType.IsSZArray)
+                        {
+                            var arrayType=it.ParameterType.GetElementType();
+                            notIgnore = NotIgnore(arrayType!);
+                        }
+                        
+                    }
+                    return it.IsOptional && NotIgnore(it.ParameterType)&&notIgnore;
+                })
                 .Select(it => new { Name = it.Name, Value = context.InvocationServices.GetRequiredService(it.ParameterType) });
             }
 
@@ -36,6 +54,8 @@ namespace BlackJackAOP
                 context.SetArgument(arg.Name!,arg.Value);
 
             await context.ProceedAsync();
+
+            bool NotIgnore(Type type) => !type.IsPrimitive && !type.IsValueType && type != typeof(string);
         }
     }
 }
