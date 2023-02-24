@@ -64,7 +64,7 @@ namespace BlackJackAOP
                     }
                 }
             }
-            log4GenerateCode(logger, generationContext.SourceCode, null!);
+            //log4GenerateCode(logger, generationContext.SourceCode, null!);
 
             if (generatedTypes.Any())
             {
